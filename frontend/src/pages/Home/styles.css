@@ -1,0 +1,183 @@
+#page-home {
+    height: 100vh;
+  
+    background: url('../../assets/home-background.svg') no-repeat 750px bottom;
+  }
+  
+  #page-home .content {
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #page-home .content header {
+    margin-top: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #page-home .content header a {
+    color: var(--title-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  #page-home .content svg{
+    color: var(--primary-color);
+    font-size: 23px;
+    margin-right: 20px;
+  }
+  
+  #page-home .content main {
+    flex: 1;
+    max-width: 560px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #page-home .content main h1 {
+    font-size: 54px;
+    color: var(--title-color);
+  }
+  
+  #page-home .content main p {
+    font-size: 24px;
+    margin-top: 24px;
+    line-height: 38px;
+  }
+  
+  #page-home .content main a {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    text-decoration: none;
+  
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  
+    margin-top: 40px;
+  }
+  
+  #page-home .content main a span {
+    display: block;
+    background: rgba(0, 0, 0, 0.08);
+    width: 72px;
+    height: 72px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  #page-home .content main a span svg {
+    color: #FFF;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+  }
+  
+  #page-home .content main a strong {
+    flex: 1;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  #page-home .content main a:hover {
+    background: #2FB86E;
+  }
+  
+  @media(max-width: 900px) {
+    #page-home .content {
+      align-items: center;
+      text-align: center;
+    }
+  
+    #page-home .content header {
+      margin: 48px auto 0;
+    }
+  
+    #page-home .content main {
+      align-items: center;
+    }
+  
+    #page-home .content main h1 {
+      font-size: 42px;
+    }
+  
+    #page-home .content main p {
+      font-size: 24px;
+    }
+  }
+
+  #modalHome{
+    position: absolute;
+    top: 0;
+    background-color: rgba(4, 0, 12, 0.94);
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+  }
+  #modalHome__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 240px;
+    position: absolute;
+    z-index: 10;
+    top:  calc(50% - 150px);
+    left: calc(50% - 225px);
+  }
+  #modalHome__content h1{
+    color: #fff;
+  }
+  #modalHome__content span{
+    color: rgb(19, 204, 102);
+    font-size: 50px;
+  }
+  #modalHome__content h1{
+    margin-bottom: 40px;
+  }
+  #modalHome__content input{
+    background: #F0F0F5;
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #6C6C80;
+    margin-bottom: 5px;
+  }
+  #modalHome__content a {
+    width: 100%;
+    height: 56px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
